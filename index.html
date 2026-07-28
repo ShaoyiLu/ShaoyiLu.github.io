@@ -119,6 +119,12 @@
       gap: 18px;
     }
 
+    .education-list {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 18px;
+    }
+
     .card {
       background: var(--card);
       border: 1px solid var(--line);
@@ -130,6 +136,40 @@
     .card h3 {
       margin: 0 0 8px;
       font-size: 22px;
+      color: var(--dark);
+    }
+
+    .logo-header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 12px;
+    }
+
+    .logo-img {
+      width: 64px;
+      height: 64px;
+      object-fit: contain;
+      flex-shrink: 0;
+    }
+
+    .logo-header h3 {
+      margin: 0;
+      font-size: 30px;
+    }
+
+    .date-badge {
+      display: inline-block;
+      background: #0d7ff2;
+      color: white;
+      font-weight: 700;
+      padding: 4px 12px;
+      border-radius: 999px;
+      margin-right: 8px;
+    }
+
+    .location-text {
+      font-weight: 700;
       color: var(--dark);
     }
 
@@ -218,6 +258,19 @@
       h2 {
         font-size: 28px;
       }
+
+      .logo-header {
+        align-items: flex-start;
+      }
+
+      .logo-header h3 {
+        font-size: 24px;
+      }
+
+      .logo-img {
+        width: 52px;
+        height: 52px;
+      }
     }
   </style>
 </head>
@@ -287,8 +340,18 @@
       <h2>Work Experience</h2>
       <div class="grid">
         <div class="card">
-          <h3>Jr. Engineering Specialist, Smart Factory & Digitization</h3>
-          <div class="meta">Johnson Electric Canada Ltd. | Ancaster, Ontario | Sep 2025 - May 2026</div>
+          <div class="logo-header">
+            <img class="logo-img" src="image/johnsonelectric.png" alt="Johnson Electric logo">
+            <div>
+              <h3>Johnson Electric Canada Ltd.</h3>
+              <p><strong>Jr. Engineering Specialist, Smart Factory & Digitization</strong></p>
+            </div>
+          </div>
+
+          <p>
+            <span class="date-badge">Sep 2025 - May 2026</span>
+            <span class="location-text">Ancaster, Ontario, Canada</span>
+          </p>
           <p>
             Contributed to smart factory digitization projects by improving manufacturing vision analytics.
             Worked with a Detectron2-based inspection system to analyze false-pass results, refine defect
