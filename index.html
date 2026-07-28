@@ -219,15 +219,54 @@
     }
 
     .contact {
-      background: var(--dark);
-      color: white;
+      background: #e9edf2;
+      color: var(--dark);
+      text-align: center;
+      padding: 70px 22px;
     }
 
     .contact h2 {
-      color: white;
+      color: var(--dark);
+      font-size: 40px;
+      margin-bottom: 18px;
     }
 
-    .contact a,
+    .contact p {
+      margin: 12px 0;
+      font-size: 18px;
+    }
+
+    .contact a {
+      color: #0077ff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 22px;
+    }
+
+    .social-icon {
+      width: 42px;
+      height: 42px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: #111827;
+      color: white !important;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 22px;
+      font-weight: 700;
+    }
+
+    .social-icon:hover {
+      background: #2563eb;
+    }
+
     header a {
       color: #93c5fd;
       text-decoration: none;
@@ -270,6 +309,10 @@
       .logo-img {
         width: 52px;
         height: 52px;
+      }
+
+      .contact h2 {
+        font-size: 32px;
       }
     }
   </style>
@@ -501,14 +544,17 @@
 
   <section id="contact" class="contact">
     <div class="container">
-      <h2>Contact</h2>
-      <p>
-        I am open to opportunities in data analytics, data science, AI engineering, software development,
-        and manufacturing digitization.
-      </p>
-      <p>Email: <a href="mailto:lu279@mcmaster.ca">lu279@mcmaster.ca</a></p>
-      <p>GitHub: <a href="https://github.com/ShaoyiLu">https://github.com/ShaoyiLu</a></p>
-      <p>LinkedIn: <a href="#">Add LinkedIn link here</a></p>
+      <h2>Contacts</h2>
+
+      <p><a href="mailto:lushaoyi521@gmail.com">lushaoyi521@gmail.com</a></p>
+      <p><a href="mailto:lu279@mcmaster.ca">lu279@mcmaster.ca</a></p>
+      <p><a href="tel:+14168216307">(+1) 416-821-6307 (CA)</a></p>
+
+      <div class="social-links">
+        <a class="social-icon" href="mailto:lushaoyi521@gmail.com" title="Email">✉</a>
+        <a class="social-icon" href="https://www.linkedin.com/in/shaoyi-lu/" title="LinkedIn">in</a>
+        <a class="social-icon" href="https://github.com/ShaoyiLu" title="GitHub">GH</a>
+      </div>
     </div>
   </section>
 
