@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shaoyi Lu | Data, AI & Software Portfolio</title>
+  <style>
+    :root {
+      --bg: #f6f8fb;
+      --text: #1f2937;
+      --muted: #5f6b7a;
+      --card: #ffffff;
+      --line: #d9e1ec;
+      --blue: #2563eb;
+      --green: #0f766e;
+      --dark: #111827;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--dark);
+      color: white;
+      padding: 64px 22px 48px;
+    }
+
+    .container {
+      max-width: 1080px;
+      margin: 0 auto;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr;
+      gap: 32px;
+      align-items: center;
+    }
+
+    h1 {
+      font-size: 48px;
+      margin: 0 0 12px;
+      line-height: 1.1;
+    }
+
+    .subtitle {
+      font-size: 22px;
+      color: #d1d5db;
+      margin-bottom: 20px;
+    }
+
+    .intro {
+      font-size: 17px;
+      color: #e5e7eb;
+      max-width: 680px;
+    }
+
+    .hero-card {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      padding: 22px;
+      border-radius: 8px;
+    }
+
+    .hero-card p {
+      margin: 8px 0;
+      color: #f3f4f6;
+    }
+
+    nav {
+      background: white;
+      border-bottom: 1px solid var(--line);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav .container {
+      display: flex;
+      gap: 20px;
+      padding: 14px 22px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: var(--blue);
+    }
+
+    section {
+      padding: 46px 22px;
+    }
+
+    h2 {
+      font-size: 28px;
+      margin: 0 0 22px;
+      color: var(--dark);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 22px;
+    }
+
+    .card h3 {
+      margin: 0 0 8px;
+      font-size: 20px;
+      color: var(--dark);
+    }
+
+    .meta {
+      color: var(--green);
+      font-weight: 700;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 14px;
+    }
+
+    .tag {
+      background: #eef2ff;
+      color: #1e40af;
+      padding: 5px 9px;
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    ul {
+      margin: 10px 0 0;
+      padding-left: 20px;
+    }
+
+    .contact {
+      background: var(--dark);
+      color: white;
+    }
+
+    .contact h2 {
+      color: white;
+    }
+
+    .contact a,
+    header a {
+      color: #93c5fd;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: var(--muted);
+      font-size: 14px;
+      background: white;
+      border-top: 1px solid var(--line);
+    }
+
+    @media (max-width: 800px) {
+      .hero,
+      .grid,
+      .skills {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        font-size: 38px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container hero">
+      <div>
+        <h1>Shaoyi Lu</h1>
+        <div class="subtitle">Data, AI & Software Portfolio</div>
+        <p class="intro">
+          I am a Computing and Software graduate student at McMaster University with a background in
+          Computer Science, Mathematics, and Data Science. I build data-driven and AI-powered systems
+          across computer vision, manufacturing analytics, predictive modeling, and full-stack applications.
+        </p>
+      </div>
+
+      <div class="hero-card">
+        <p><strong>Location:</strong> Hamilton, Ontario, Canada</p>
+        <p><strong>Email:</strong> lu279@mcmaster.ca</p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/ShaoyiLu">github.com/ShaoyiLu</a></p>
+        <p><strong>LinkedIn:</strong> Add your LinkedIn link here</p>
+      </div>
+    </div>
+  </header>
+
+  <nav>
+    <div class="container">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <section id="about">
+    <div class="container">
+      <h2>About</h2>
+      <div class="card">
+        <p>
+          I am interested in roles across data analytics, data science, AI engineering, software development,
+          and manufacturing digitization. My work combines machine learning, computer vision, data pipelines,
+          statistical modeling, dashboarding, and practical software tools for real operational problems.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="container">
+      <h2>Experience</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Jr. Engineering Specialist, Smart Factory & Digitization</h3>
+          <div class="meta">Johnson Electric Canada Ltd. | 2025 - 2026</div>
+          <p>
+            Worked on manufacturing vision analytics, false-pass defect analysis, label refinement,
+            image preprocessing, data aggregation, and Django-based reporting tools.
+          </p>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">Detectron2</span>
+            <span class="tag">Django</span>
+            <span class="tag">Excel</span>
+            <span class="tag">Computer Vision</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>AI-Based Wireless Signal Classification</h3>
+          <div class="meta">Xingtu Xinke Technology Co., Ltd. | 2024</div>
+          <p>
+            Designed a deep learning model combining CNN, LSTM, and self-attention for wireless signal
+            modulation classification, achieving strong classification performance.
+          </p>
+          <div class="tags">
+            <span class="tag">Deep Learning</span>
+            <span class="tag">CNN</span>
+            <span class="tag">LSTM</span>
+            <span class="tag">Self-Attention</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Multi-Domain Image Classification System</h3>
+          <div class="meta">Machine Learning / Computer Vision</div>
+          <p>
+            Built a lightweight multi-model image classification system using model fusion and ensemble
+            learning to handle heterogeneous image classes.
+          </p>
+          <div class="tags">
+            <span class="tag">PyTorch</span>
+            <span class="tag">CNN</span>
+            <span class="tag">Model Fusion</span>
+            <span class="tag">Computer Vision</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>CNC Job Programming and Setup Sheet Management System</h3>
+          <div class="meta">Manufacturing / Automation</div>
+          <p>
+            Designed a CAD/CAM-based manufacturing workflow with setup sheets, tooling records,
+            inspection checks, and CNC program backup management.
+          </p>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">Excel</span>
+            <span class="tag">CAD/CAM</span>
+            <span class="tag">CNC</span>
+            <span class="tag">G-code</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Spatiotemporal Pest Trend Prediction</h3>
+          <div class="meta">Research / Statistical Modeling</div>
+          <p>
+            Processed large-scale agricultural observations and applied regression and spatiotemporal
+            modeling to predict future pest trends.
+          </p>
+          <div class="tags">
+            <span class="tag">R</span>
+            <span class="tag">Regression</span>
+            <span class="tag">Data Analysis</span>
+            <span class="tag">Forecasting</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Cancer Tumor Classifier</h3>
+          <div class="meta">Machine Learning / Healthcare Analytics</div>
+          <p>
+            Built a high-precision cancer tumor classifier using machine learning and mathematical
+            optimization techniques on structured patient data.
+          </p>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">Julia</span>
+            <span class="tag">Logistic Regression</span>
+            <span class="tag">Optimization</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills">
+        <div class="card">
+          <h3>Programming</h3>
+          <p>Python, R, JavaScript, TypeScript, Java, C/C++, Julia, MATLAB, HTML, CSS</p>
+        </div>
+        <div class="card">
+          <h3>Data & Analytics</h3>
+          <p>SQL, Excel, Power Query, Pivot Tables, Power BI, Tableau, SAS, statistical modeling</p>
+        </div>
+        <div class="card">
+          <h3>AI & Software</h3>
+          <p>PyTorch, scikit-learn, Detectron2, CNN, LSTM, Django, REST APIs, Docker, Git</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:lu279@mcmaster.ca">lu279@mcmaster.ca</a></p>
+      <p>GitHub: <a href="https://github.com/ShaoyiLu">https://github.com/ShaoyiLu</a></p>
+      <p>LinkedIn: Add your LinkedIn link here</p>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Shaoyi Lu. Built with HTML, CSS, and GitHub Pages.
+  </footer>
+</body>
+</html>
